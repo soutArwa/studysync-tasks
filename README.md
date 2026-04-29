@@ -14,7 +14,7 @@ The application provides real-time synchronized task lists for each course, allo
   * Frontend Integration
   * Testing and Quality Assurance
 
-* **Yara Alsufayan** — Frontend & Database Integration, Testing
+* **Yara Alsfaian** — Frontend & Database Integration, Testing
 
   * Connected Firestore data operations with frontend components
   * Implemented task features across course views
