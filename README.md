@@ -1,151 +1,59 @@
-# **StudySync Tasks – Cloud-Based Academic To-Do Application**
+# StudySync Tasks 
+**Cloud-Based Academic To-Do Application**
 
-StudySync is a cloud-enabled task management system designed for student groups working on shared academic courses.
-The application provides real-time synchronized task lists for each course, allowing students to collaboratively create, update, assign, and track academic tasks in a structured and organized interface.
+>  **Live Demo:** [studysync-database.web.app](https://studysync-database.web.app)
 
----
-
-## **1. Team Members**
-
-* **Arwa Bilobeid** — Team Leader
-
-  * Firebase Integration
-  * Database Structure and Configuration
-  * Frontend Integration
-  * Testing and Quality Assurance
-
-* **Yara Alsfaian** — Frontend & Database Integration, Testing
-
-  * Connected Firestore data operations with frontend components
-  * Implemented task features across course views
-  * Contributed to functional testing (with Dana)
-
-* **Dana Alqhtani** — Database Development & Frontend Integration
-
-  * Designed Firestore collections and data relationships
-  * Linked CRUD operations with the UI
-  * Conducted testing for task functionality
-
-* **Lujain AlTayyarah** — UI & Frontend Design
-
-  * Designed core interface layouts
-  * Developed styling and user experience flow
-  * Created main page structures for the application
+StudySync is a modern, cloud-enabled task management system engineered specifically for student groups. It breaks the limitations of individual to-do apps by providing a **real-time synchronized workspace**, allowing students to collaboratively create, assign, and track academic tasks across shared courses in a highly structured interface.
 
 ---
 
-## **2. Project Overview**
+##  The Team
 
-**Use Case:**
-University students working in groups often share deadlines, tasks, and project responsibilities. Standard to-do apps focus on individual users and lack real-time group synchronization.
-
-**StudySync Tasks** addresses this by offering:
-
-* Shared course-specific task lists
-* Real-time updates across all users
-* A unified academic task management solution per group
+* **Arwa Bilobeid** *(Team Leader)* — Firebase Integration, Database Structure, Frontend Integration, QA & Testing.
+* **Yara Alsfaian** — Frontend & Database Integration, Task Features Implementation, Functional Testing.
+* **Dana Alqhtani** — Database Development (Firestore Schema), Frontend CRUD Linking, Functionality Testing.
+* **Lujain AlTayyarah** — UI/UX Design, Core Interface Layouts, User Flow & Styling.
 
 ---
 
-## **3. Application Features**
+## Why StudySync? (The Use Case)
+University students working in groups often struggle with shared deadlines and scattered project responsibilities. Standard to-do apps fail because they isolate users. 
 
-### **A. User Authentication**
-
-* Secure account creation and login
-* Email and password authentication
-* User profile storage (email + display name)
-* Email verification
- 
-
-### **B. Task Management (CRUD)**
-
-Each task supports:
-
-* Title
-* Description
-* Due date  
-* Priority (Low / Medium / High)
-* Assignment to a group member ( Shared Tasks )
-
-Functionalities include:
-
-* Create tasks
-* View and filter tasks
-* View and filter courses among tasks
-* Edit task details
-* Mark tasks complete/incomplete
-* Delete tasks
-
-### **C. Cloud Storage & Real-Time Synchronization**
-
-* Built using **Firebase Firestore**
-* All changes instantly synchronized for users in the same course
-* Data hierarchy: **Users → Courses → Tasks**
-
-### **D. Frontend UI**
-
-* Developed using **React (Vite) , CSS**
-* Fully responsive single-page application (SPA)
-* Includes:
-
-  * Login / Register page
-  * Dashboard with user-wide course & tasks overview
-  * Course-specific task pages
-  * Forms for adding and editing tasks
-  * Clear distinction between completed and pending tasks
+**StudySync Tasks** solves this by offering:
+* **Course-Specific Workspaces:** Dedicated task lists for every shared subject.
+* **Real-Time Synchronization:** Instant updates across all group members' screens.
+* **Unified Academic Management:** A single source of truth for group responsibilities.
 
 ---
 
-## **4. Technology Stack**
+##  Core Features
 
-* **Frontend:** React (Vite) , CSS
-* **Authentication:** Firebase Authentication
-* **Database:** Firebase Firestore
-* **Hosting:** Firebase Hosting
-* **Other Tools:** Node.js, npm, Git, GitHub
+### 🔐 A. User Authentication
+* Secure account creation and login via Firebase Auth.
+* Protected user profiles (Email + Display Name).
+* Automated email verification flow.
 
----
+###  B. Task Management (CRUD operations)
+* **Comprehensive Task Details:** Title, Description, Due Date, and Priority Levels (Low/Medium/High).
+* **Group Delegation:** Assign specific tasks to individual group members.
+* **Dynamic Interactivity:** Create, Edit, Delete, and toggle Complete/Incomplete statuses seamlessly.
+* **Smart Filtering:** Filter tasks globally or drill down by specific courses.
 
-## **5. Setup Instructions (How to Run the Project Locally)**
+### ☁️ C. Cloud Storage & Real-Time Sync
+* Powered by **Firebase Firestore**.
+* Optimized Data Hierarchy: `Users → Courses → Tasks`.
+* Zero-latency synchronization for users collaborating in the same course.
 
-### **Step 1: Install Dependencies**
-
-```bash
-npm install
-```
-
-### **Step 2: Add Environment Variables**
-
-Create a `.env` file in the project root and include:
-
-```
-VITE_API_KEY=your_api_key
-VITE_AUTH_DOMAIN=your_auth_domain
-VITE_PROJECT_ID=your_project_id
-VITE_STORAGE_BUCKET=your_storage_bucket
-VITE_MESSAGING_SENDER_ID=your_sender_id
-VITE_APP_ID=your_app_id
-```
-
-These values are provided in Firebase Project Settings → Web App Configuration.
-
-### **Step 3: Run the Development Server**
-
-```bash
-npm run dev
-```
-
-Application will run on:
-
-```
-http://localhost:5173/
-```
-
+### D. Modern Frontend UI
+* Built for speed using **React (Vite)** and custom **CSS**.
+* Fully responsive Single Page Application (SPA).
+* Intuitive dashboards separating global overviews from course-specific views.
 
 ---
 
-## **6. Live Demo URL**
+## Technology Stack
 
-The deployed version of the project is available at:
-**[https://studysync-database.web.app](https://studysync-database.web.app)**
-
+* **Frontend:** React (Vite), CSS
+* **Backend/BaaS:** Firebase (Firestore, Authentication, Hosting)
+* **Environment:** Node.js, npm
+* **Version Control:** Git, GitHub
